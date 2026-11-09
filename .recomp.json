@@ -5,7 +5,8 @@
   "system": "SNES",
   "type": "recomp",
   "original": {
-    "region": "Japan (English translation v2.08 required)"
+    "region": "Japan",
+    "revision": "English translation v2.08"
   },
   "status": "released",
   "targets": [
@@ -22,18 +23,18 @@
   "links": [
     {
       "label": "Repository",
-      "url": "https://github.com/Junior-Jones/Sailor-Moon-Another-Story"
+      "url": "https://github.com/Junior-Jones/Sailor-Moon-Another-Story-SNES-Static-Recomp"
     },
     {
       "label": "Run and build instructions",
-      "url": "https://github.com/Junior-Jones/Sailor-Moon-Another-Story/blob/main/README.md"
+      "url": "https://github.com/Junior-Jones/Sailor-Moon-Another-Story-SNES-Static-Recomp/blob/main/README.md"
     },
     {
       "label": "Windows x64 release",
-      "url": "https://github.com/Junior-Jones/Sailor-Moon-Another-Story/releases/tag/v1.0.0"
+      "url": "https://github.com/Junior-Jones/Sailor-Moon-Another-Story-SNES-Static-Recomp/releases/tag/v1.0.0"
     }
   ],
-  "notes": "JRPG. Portable Windows 10/11 x64 release 1.0.0 with keyboard and gamepad input, battery saves, snapshots and audio. Requires the exact English v2.08 patched Japan NTSC ROM; ROM and translation patch are not included. Scoped gameplay and ROM-free CI checks are not a complete playthrough certification.",
+  "notes": "JRPG. Portable Windows 10/11 x64 release with keyboard and gamepad input, battery saves, snapshots and audio. Requires the Japan NTSC release with English translation patch v2.08; game data and patch are not included. Scoped gameplay and CI checks are not a complete playthrough certification.",
   "tags": [
     "JRPG",
     "English translation"
