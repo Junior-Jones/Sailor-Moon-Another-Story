@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.20)
+project(SailorMoon LANGUAGES C CXX)
+set(SAILOR_MOON_CORE_LIBRARY "${CMAKE_CURRENT_LIST_DIR}/lib/libsailor_moon_core.a" CACHE FILEPATH "Complete compact core archive")
+set(SAILOR_MOON_CORE_LIBRARY_SHA256 "6a6e94b60a879e0edc8ec1c29774ce4ba5ff6448505869c1bfc2fa74e0bf1e59" CACHE STRING "Core archive identity")
+set(SAILOR_MOON_CORE_RECEIPT "${CMAKE_CURRENT_LIST_DIR}/lib/core-receipt.json" CACHE FILEPATH "Core receipt")
+set(SAILOR_MOON_CORE_RECEIPT_SHA256 "63264c116c9b1a9f635a8783358d9c9a491f7672146cc9265caed3ea4e53cb0d" CACHE STRING "Core receipt identity")
+set(SAILOR_MOON_SDL_SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}/third_party/SDL3" CACHE PATH "Bundled SDL3 source")
+add_subdirectory(frontend)

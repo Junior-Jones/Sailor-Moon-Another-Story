@@ -1,0 +1,7 @@
+Host UI structure derives from the reusable Jungle Strike1.0.0 frontend
+in Starter SNESv12, including the corrected F1 modal/focus lifecycle. Original
+reference manifest/receipt/all26 files retained reference-only externally.
+Original opaque game facade not selected; no foreign static-core/ROM/assets.
+SDL3 local generic dependency license: licenses/SDL-LICENSE.txt. Adapter uses
+compiled-in SDL mappings and optional user mapping file; no separate gamepad
+database distributed. No emulator audio semantic source imported.

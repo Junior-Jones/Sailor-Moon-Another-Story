@@ -1,0 +1,47 @@
+Sailor Moon: Another Story (SNES) Static Recompilation
+Version: 1.0.0
+Platform: Native 64-bit Windows 10 and Windows 11
+Executable: Launcher.exe
+ROM: Japan NTSC with English translation v2.08; required externally
+
+Version 1.0.0 release summary
+-----------------------------
+- Target-specific ahead-of-time S-CPU, S-SMP and S-DSP execution.
+- Live graphics, audio and input; fail-closed execution without an interpreter,
+  runtime opcode decoder, JIT, learning system or emulator fallback.
+- English translation v2.08, released 1 September 2021.
+- Required unheadered patched ROM: 4,194,304 bytes.
+- SHA-256: 9690863eea45167e69b522c124b517bdc3457e70dc080ddbf925462a989acec9
+- Translation release: https://www.romhacking.net/translations/4654/
+- Archived listing: https://neoromhacking.net/translationpage.php?id=4654
+
+Static-core summary
+-------------------
+- All 68,539 exact context keys retained as 440 shared native bodies across
+  747 page wrappers. The discovery graph has 185,876 repeat-inclusive records.
+- Complete core archive reduced from 54,309,738 to 33,694,806 bytes.
+- Exact source guards, successor domains, timing and failure boundaries retained.
+- Bus, memory, CPU I/O, IRQ/NMI, DMA/HDMA, input, PPU, raster scheduling,
+  static audio-driver and 32-phase S-DSP ownership remain in the native core.
+
+Version 1.0.0 frontend features
+--------------------------------
+- Portable x64 Win32 launcher with keyboard-accessible menus and dialogs.
+- SDL3 and compiler support runtimes statically linked; no separate SDL DLL.
+- First-run Welcome identifies application 1.0.0 and English translation v2.08.
+- Windowed/full-screen presentation, scaling, FPS display and screenshots.
+- Mandatory natural NTSC pacing at approximately 60.0988 FPS.
+- Configurable one-player keyboard/gamepad bindings and input source.
+- Settings.ini beside Launcher.exe stores frontend and audio preferences.
+- Five full-machine snapshot slots with atomic writes and integrity/ROM/build
+  checks. F2/F3 open save/load dialogs; 1/2 use the selected slot.
+- Battery-backed game saves and snapshots stored under Saves.
+- DirectSound output from native 32,000 Hz signed stereo PCM, with output
+  device/rate, resampling, buffering, drift and underrun recovery settings.
+- Failure diagnostics saved under Logs; no fallback execution is enabled.
+
+Release package
+---------------
+Launcher.exe, README.txt, VERSION.txt, THIRD-PARTY-NOTICES.txt,
+SDL-LICENSE.txt, and Rom/Screenshots instruction folders.
+No ROM, user settings, saves, snapshots, logs or development evidence included.
